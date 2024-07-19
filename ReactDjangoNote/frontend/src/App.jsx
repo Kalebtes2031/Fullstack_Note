@@ -5,7 +5,8 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound"
 import ProtectedRoute from "./components/ProtectedRoute";
-import AddNote from "./pages/AddNote";
+import PasswordResetRequest from "./pages/PasswordResetRequest";
+import ResetPassword from "./pages/ResetPassword";
 
 function Logout(){
   localStorage.clear()
@@ -32,6 +33,8 @@ function App() {
         <Route path="/login" element={<Login/>}/>
         <Route path="/logout" element={<Logout/>}/>
         <Route path="/register" element={<RegisterAndLogout/>} />
+        <Route path="/password-reset" element={<PasswordResetRequest />} />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
     </BrowserRouter>
