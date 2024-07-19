@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body{
+    margin: 0%;
+
+}
+.bg-dark{
+    background-color: #4a5568;
+}
