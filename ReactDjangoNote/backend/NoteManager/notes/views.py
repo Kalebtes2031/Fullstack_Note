@@ -31,7 +31,7 @@ class PasswordResetRequestView(APIView):
             user_profile.password_reset_token = token
             user_profile.save()
 
-            reset_url = f"http://localhost:5173/reset-password/{token}"
+            reset_url = f"https://fullstack-note-frontend.vercel.app/reset-password/{token}"
             send_mail(
                 'Password Reset Request',
                 f'Please click the link below to reset your password:\n\n{reset_url}',
