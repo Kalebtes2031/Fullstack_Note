@@ -17,6 +17,7 @@ sqlparse = "*"
 tzdata = "*"
 dj-database-url = "*"
 python-decouple = "*"
+psycopg2 = "*"
 
 [dev-packages]
 
